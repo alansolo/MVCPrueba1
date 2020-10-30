@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "HolaMundo";
+}
+
+<h2>HolaMundo</h2>
+
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+
+    <script src="~/Scripts/HolaMundo/HolaMundo.js"></script>
+
+</head>
+
+<body>
+    <div ng-app="MyApp" ng-controller="MyController">
+        <button class="btn btn-primary" ng-click="DialogoJava()">Prueba</button>
+        <h5></h5>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Uno</th>
+                    <th scope="col">Dos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="d in ListDialogo">
+                    <td scope="col">{{d.Mensaje}}</td>
+                    <td scope="col">{{d.Mensaje}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
